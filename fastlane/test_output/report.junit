@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='CryptoPricesUITests.xctest' tests='4' failures='0'>
+  <testsuite name='CryptoPricesTests.CryptoPricesTests' tests='2' failures='0'>
+    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testExample' time='0.002'/>
+    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testPerformanceExample' time='0.425'/>
+  </testsuite>
+  <testsuite name='CryptoPricesUITests.CryptoPricesUITests' tests='2' failures='0'>
+    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testExample' time='1.865'/>
+    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testLaunchPerformance' time='17.035'/>
+  </testsuite>
+</testsuites>
