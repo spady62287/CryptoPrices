@@ -1,11 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CryptoPricesUITests.xctest' tests='4' failures='0'>
+<testsuites name='CryptoPricesUITests.xctest' tests='7' failures='0'>
   <testsuite name='CryptoPricesTests.CryptoPricesTests' tests='2' failures='0'>
-    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testExample' time='0.002'/>
-    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testPerformanceExample' time='0.425'/>
+    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testExample' time='0.007'/>
+    <testcase classname='CryptoPricesTests.CryptoPricesTests' name='testPerformanceExample' time='0.746'/>
+  </testsuite>
+  <testsuite name='CryptoPricesTests.TestBaseClasses' tests='3' failures='0'>
+    <testcase classname='CryptoPricesTests.TestBaseClasses' name='testBaseResponse' time='0.004'/>
+    <testcase classname='CryptoPricesTests.TestBaseClasses' name='testBaseService' time='0.035'/>
+    <testcase classname='CryptoPricesTests.TestBaseClasses' name='testBaseServiceHandlesErrors' time='0.002'/>
   </testsuite>
   <testsuite name='CryptoPricesUITests.CryptoPricesUITests' tests='2' failures='0'>
-    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testExample' time='1.865'/>
-    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testLaunchPerformance' time='17.035'/>
+    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testExample' time='2.163'/>
+    <testcase classname='CryptoPricesUITests.CryptoPricesUITests' name='testLaunchPerformance' time='16.059'/>
   </testsuite>
 </testsuites>
