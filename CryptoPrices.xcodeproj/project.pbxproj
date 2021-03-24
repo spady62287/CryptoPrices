@@ -13,6 +13,12 @@
 		99A2D1482608D6F10084A947 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A2D1472608D6F10084A947 /* Preview Assets.xcassets */; };
 		99A2D1532608D6F10084A947 /* CryptoPricesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D1522608D6F10084A947 /* CryptoPricesTests.swift */; };
 		99A2D15E2608D6F10084A947 /* CryptoPricesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D15D2608D6F10084A947 /* CryptoPricesUITests.swift */; };
+		99A2D1742608DD840084A947 /* BaseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D1732608DD840084A947 /* BaseCodable.swift */; };
+		99A2D17C2608E1430084A947 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D17B2608E1430084A947 /* BaseResponse.swift */; };
+		99A2D1812608E1CE0084A947 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D1802608E1CE0084A947 /* BaseRequest.swift */; };
+		99A2D1862608FC950084A947 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D1852608FC950084A947 /* BaseService.swift */; };
+		99A2D18B260906E90084A947 /* TestBaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2D18A260906E80084A947 /* TestBaseClasses.swift */; };
+		99A2D190260909210084A947 /* TestJsonExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A2D18F260909210084A947 /* TestJsonExample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		99A2D1592608D6F10084A947 /* CryptoPricesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoPricesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A2D15D2608D6F10084A947 /* CryptoPricesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPricesUITests.swift; sourceTree = "<group>"; };
 		99A2D15F2608D6F10084A947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A2D1732608DD840084A947 /* BaseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodable.swift; sourceTree = "<group>"; };
+		99A2D17B2608E1430084A947 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		99A2D1802608E1CE0084A947 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		99A2D1852608FC950084A947 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		99A2D18A260906E80084A947 /* TestBaseClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseClasses.swift; sourceTree = "<group>"; };
+		99A2D18F260909210084A947 /* TestJsonExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJsonExample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +107,13 @@
 		99A2D13F2608D6EF0084A947 /* CryptoPrices */ = {
 			isa = PBXGroup;
 			children = (
+				99A2D16E2608DC260084A947 /* Subsystems */,
 				99A2D1402608D6EF0084A947 /* CryptoPricesApp.swift */,
 				99A2D1422608D6EF0084A947 /* ContentView.swift */,
 				99A2D1442608D6F10084A947 /* Assets.xcassets */,
 				99A2D1492608D6F10084A947 /* Info.plist */,
 				99A2D1462608D6F10084A947 /* Preview Content */,
+				99A2D18F260909210084A947 /* TestJsonExample.json */,
 			);
 			path = CryptoPrices;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 			children = (
 				99A2D1522608D6F10084A947 /* CryptoPricesTests.swift */,
 				99A2D1542608D6F10084A947 /* Info.plist */,
+				99A2D18A260906E80084A947 /* TestBaseClasses.swift */,
 			);
 			path = CryptoPricesTests;
 			sourceTree = "<group>";
@@ -128,6 +143,49 @@
 				99A2D15F2608D6F10084A947 /* Info.plist */,
 			);
 			path = CryptoPricesUITests;
+			sourceTree = "<group>";
+		};
+		99A2D16E2608DC260084A947 /* Subsystems */ = {
+			isa = PBXGroup;
+			children = (
+				99A2D1722608DC730084A947 /* Protocols */,
+				99A2D1712608DC6C0084A947 /* Views */,
+				99A2D1702608DC620084A947 /* Constants */,
+				99A2D16F2608DC3F0084A947 /* Bases */,
+			);
+			path = Subsystems;
+			sourceTree = "<group>";
+		};
+		99A2D16F2608DC3F0084A947 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				99A2D1802608E1CE0084A947 /* BaseRequest.swift */,
+				99A2D1852608FC950084A947 /* BaseService.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		99A2D1702608DC620084A947 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		99A2D1712608DC6C0084A947 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99A2D1722608DC730084A947 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				99A2D1732608DD840084A947 /* BaseCodable.swift */,
+				99A2D17B2608E1430084A947 /* BaseResponse.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +293,7 @@
 			files = (
 				99A2D1482608D6F10084A947 /* Preview Assets.xcassets in Resources */,
 				99A2D1452608D6F10084A947 /* Assets.xcassets in Resources */,
+				99A2D190260909210084A947 /* TestJsonExample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A2D1812608E1CE0084A947 /* BaseRequest.swift in Sources */,
 				99A2D1432608D6EF0084A947 /* ContentView.swift in Sources */,
+				99A2D1862608FC950084A947 /* BaseService.swift in Sources */,
 				99A2D1412608D6EF0084A947 /* CryptoPricesApp.swift in Sources */,
+				99A2D1742608DD840084A947 /* BaseCodable.swift in Sources */,
+				99A2D17C2608E1430084A947 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A2D1532608D6F10084A947 /* CryptoPricesTests.swift in Sources */,
+				99A2D18B260906E90084A947 /* TestBaseClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
